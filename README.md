@@ -32,7 +32,7 @@ To affect change on the host filesystem, remove the `:ro` option from the `-v` a
 
 ## CVEs
 
-As always, 0 CVEs c/o Wolfi:
+As always, 0 CVEs c/o Wolfi (these are simply a point-in-time reference for display purposes):
 
 `Dockerfile`:
 ```
