@@ -1,0 +1,5 @@
+# Apko SBOMs
+sbom-*.json
+
+# Apko archives
+*.tar

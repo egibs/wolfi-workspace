@@ -1,0 +1,28 @@
+contents:
+  keyring:
+    - https://packages.wolfi.dev/os/wolfi-signing.rsa.pub
+  repositories:
+    - https://packages.wolfi.dev/os
+  packages:
+    - bash~5.2.21
+    - go~1.21
+    - openssl-dev~3.3.1
+    - openssl~3.3.1
+    - vim~9.1
+    - wolfi-base
+    - yara-dev~4.5.1
+    - yara~4.5.1
+
+entrypoint:
+  command: /bin/bash
+
+accounts:
+  groups:
+    - groupname: wolfi
+      gid: 1000
+  users:
+    - username: wolfi
+      uid: 1000
+  run-as: "1000"
+
+archs: [aarch64, x86_64]
