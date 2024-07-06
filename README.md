@@ -36,15 +36,15 @@ As always, 0 CVEs c/o Wolfi:
 
 `Dockerfile`:
 ```
-$ grype 51e4fdf0ce56
- ✔ Vulnerability DB                [updated]
- ✔ Loaded image                                                                                                                                                                                                                                                              51e4fdf0ce56
- ✔ Parsed image                                                                                                                                                                                                   sha256:51e4fdf0ce56d74aca5189060cea324b40ff32ab5ac6b00586ace223b0a05ccb
- ✔ Cataloged contents                                                                                                                                                                                                    53838ae0b250a4faa32d416517daf77f05324cd89c5ef71b584d632cdf0a6be5
-   ├── ✔ Packages                        [91 packages]
-   ├── ✔ File digests                    [10,482 files]
-   ├── ✔ File metadata                   [10,482 locations]
-   └── ✔ Executables                     [154 executables]
+grype workspace:latest
+ ✔ Vulnerability DB                [no update available]
+ ✔ Loaded image                                                                                                                                                                                                                                                          workspace:latest
+ ✔ Parsed image                                                                                                                                                                                                   sha256:c18f37e2086ca622a1570aa0f9bbe8f563c63599d1f8948648f1c70b99abad08
+ ✔ Cataloged contents                                                                                                                                                                                                    bd8a14d3d83d77ee575a255b0c32df2a5ad23d0555ea0a6ad6d10800d1af64cd
+   ├── ✔ Packages                        [103 packages]
+   ├── ✔ File digests                    [10,765 files]
+   ├── ✔ File metadata                   [10,765 locations]
+   └── ✔ Executables                     [172 executables]
  ✔ Scanned for vulnerabilities     [0 vulnerability matches]
    ├── by severity: 0 critical, 0 high, 0 medium, 0 low, 0 negligible
    └── by status:   0 fixed, 0 not-fixed, 0 ignored
@@ -53,15 +53,15 @@ No vulnerabilities found
 
 Apko:
 ```
-$ grype f8ab6f381fb2
+grype workspace:latest-amd64
  ✔ Vulnerability DB                [no update available]
- ✔ Loaded image                                                                                                                                                                                                                                                              f8ab6f381fb2
- ✔ Parsed image                                                                                                                                                                                                   sha256:f8ab6f381fb2ab8732bf46dd531232d8b36d45a2a3fb6033b2d02297b6c14f22
- ✔ Cataloged contents                                                                                                                                                                                                    f2e76e59a2eebffe1199dd9092fbd55950b52ba0fbc574b9700ce68c90fdb579
-   ├── ✔ Packages                        [90 packages]
-   ├── ✔ File digests                    [10,431 files]
-   ├── ✔ File metadata                   [10,431 locations]
-   └── ✔ Executables                     [141 executables]
+ ✔ Loaded image                                                                                                                                                                                                                                                    workspace:latest-amd64
+ ✔ Parsed image                                                                                                                                                                                                   sha256:81f2753874bc454252f7621b52b36e921a2414f78238c09d8e8c5b79b7fb7637
+ ✔ Cataloged contents                                                                                                                                                                                                    0ee483804875dcdee6c883b3b8fb989460aa072640fa68c07f2fbdf8b401c521
+   ├── ✔ Packages                        [102 packages]
+   ├── ✔ File digests                    [10,714 files]
+   ├── ✔ File metadata                   [10,714 locations]
+   └── ✔ Executables                     [159 executables]
  ✔ Scanned for vulnerabilities     [0 vulnerability matches]
    ├── by severity: 0 critical, 0 high, 0 medium, 0 low, 0 negligible
    └── by status:   0 fixed, 0 not-fixed, 0 ignored
@@ -69,15 +69,15 @@ No vulnerabilities found
 ```
 
 ```
-$ grype 7cdd31a7ed5d
+grype workspace:latest-arm64
  ✔ Vulnerability DB                [no update available]
- ✔ Loaded image                                                                                                                                                                                                                                                              7cdd31a7ed5d
- ✔ Parsed image                                                                                                                                                                                                   sha256:7cdd31a7ed5da6ff73883102e29a35154846aaa31c8b1e4c43cbb0232e732a1a
- ✔ Cataloged contents                                                                                                                                                                                                    6ff60bb1d7b9f157de73f113b20912696f0f3c7cfc23ffdd1e292b6bd678262a
-   ├── ✔ Packages                        [90 packages]
-   ├── ✔ File digests                    [10,464 files]
-   ├── ✔ File metadata                   [10,464 locations]
-   └── ✔ Executables                     [141 executables]
+ ✔ Loaded image                                                                                                                                                                                                                                                    workspace:latest-arm64
+ ✔ Parsed image                                                                                                                                                                                                   sha256:d46d4606272ed12aa42fb42d21777d7a86f7bc76cdf17b7023a697b89ba555b5
+ ✔ Cataloged contents                                                                                                                                                                                                    e1692493fe661542b421b797c9ac4408463264d6cdc8fe01e297b0e619426dd5
+   ├── ✔ Packages                        [102 packages]
+   ├── ✔ File digests                    [10,747 files]
+   ├── ✔ File metadata                   [10,747 locations]
+   └── ✔ Executables                     [159 executables]
  ✔ Scanned for vulnerabilities     [0 vulnerability matches]
    ├── by severity: 0 critical, 0 high, 0 medium, 0 low, 0 negligible
    └── by status:   0 fixed, 0 not-fixed, 0 ignored
