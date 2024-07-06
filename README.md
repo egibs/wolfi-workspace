@@ -20,3 +20,12 @@ Usage:
 make build
 make workspace
 ```
+
+## Volume/Working Directory
+
+By default, the current working directory is bind-mounted as a volume in the container. The working directory can be changed by updating the `docker run` command:
+```
+docker run --rm -it -v $(pwd):<container path>:ro -w <container path> workspace:latest
+```
+
+To affect change on the host filesystem, remove the `:ro` option from the `-v` arguments.
