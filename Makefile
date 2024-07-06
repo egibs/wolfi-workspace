@@ -1,8 +1,8 @@
-APKO_TAG := latest-$(shell uname -m)
-ARCHIVE := workspace.tar
 DIR := $(shell pwd)
 NAME := workspace
+ARCHIVE := $(NAME).tar
 TAG := latest
+APKO_TAG := $(TAG)-$(shell uname -m)
 
 .PHONY: build
 build:
