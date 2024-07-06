@@ -1,6 +1,6 @@
-DIR := $(shell pwd)
 NAME := workspace
 ARCHIVE := $(NAME).tar
+DIR := /$(NAME)
 TAG := latest
 APKO_TAG := $(TAG)-$(shell uname -m)
 

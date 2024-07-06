@@ -13,7 +13,7 @@ make apko-workspace
 
 ## Dockerfile
 
-Fancier implementation that allows for `sudo` access to `apk` and `vim` along with a colorized terminal. Useful when needing to add additional packages.
+Less rigid implementation that allows for `sudo` access to `apk` and `vim` (though still relatively hardened) along with a colorized terminal. Useful when needing to add additional packages.
 
 Usage:
 ```
