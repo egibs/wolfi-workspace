@@ -10,7 +10,7 @@ build:
 
 .PHONY: workspace
 workspace: build
-	docker run --rm -it -v $(shell pwd):$(DIR):ro -w $(DIR) $(NAME):$(TAG)
+	docker run --read-only --rm -it -v $(shell pwd):$(DIR) -w $(DIR) $(NAME):$(TAG)
 
 .PHONY: apko-build
 apko-build:
@@ -19,4 +19,4 @@ apko-build:
 
 .PHONY: apko-workspace
 apko-workspace: apko-build
-	docker run --rm -it -v $(shell pwd):$(DIR):ro -w $(DIR) $(NAME):$(APKO_TAG)
+	docker run --read-only --rm -it -v $(shell pwd):$(DIR) -v /tmp -w $(DIR) $(NAME):$(APKO_TAG)

@@ -52,8 +52,6 @@ ENV PATH=$PATH:$GOPATH/bin
 WORKDIR /${DIR}
 
 VOLUME /tmp
-VOLUME /run
-VOLUME /var/log
 
 ENTRYPOINT ["/sbin/tini", "--"]
 
