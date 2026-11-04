@@ -1,4 +1,4 @@
-FROM cgr.dev/chainguard/wolfi-base@sha256:3490ac41510e17846b30c9ebfc4a323dfdecbd9a35e7b0e4e745a8f496a18f25 as WORKSPACE
+FROM cgr.dev/chainguard/wolfi-base@sha256:771146c2dfc880902a185f060c3db5571473c46b267edd98c3119c83068dfb61 as WORKSPACE
 
 ENV TERM='xterm-256color'
 ENV PS1='\e[92m\u\e[0m@\e[94m\h\e[0m:\e[35m\w\e[0m# '
